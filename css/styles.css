@@ -136,6 +136,18 @@ img {
         color: var(--logo-web-color)
 }
 
+.icons-contact {
+        margin-right: 10px;
+        width: 16px;
+        height: 12px;
+        }
+
+.icons-contact:hover,
+.icons-contact:focus {
+        color: var(--logo-web-color);
+        fill: var(--logo-web-color);
+}
+
 .big-header{
         border-top: 1px solid #ECECEC;
         background-color: var(--footer-bg-color);
@@ -295,12 +307,28 @@ img {
         text-align: center;
         padding-bottom: 30px;
 }
+
+.icons-company-customer {
+        list-style-type: none;
+        display: flex;
+        text-align: center;
+}
+
+.icons-company-customer:hover,
+.icons-company-customer:focus {
+        border-color: var(--logo-web-color);
+}
+
 .bottom {
         background-color: var(--footer-bg-color);
         list-style: none;
         text-decoration: none;
         padding-top: 60px;
         padding-bottom: 60px;
+}
+
+.bottom-margin {
+        margin-bottom: 16px;
 }
 .studio-name-footer{
         font-family: "Raleway", sans-serif;

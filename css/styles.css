@@ -12,10 +12,17 @@
     --buttons-color: #F5F4FA;
     --botom-contact-color: #FFFFFF99;
     --icon-color: #AFB1B8;
-    --shadow-img-1: #00000033;
-    --shadow-img-2: #00000024;
+    --shadow-main-button: #00000026;
+    --shadow-img-1: #00000033; 
+    --shadow-img-2: #00000024; 
     --shadow-img-3: #0000001F; 
     --shadow-img: #2F303A66;
+    --shadow-por-1: #00000029;
+    --shadow-por-2: #0000000F;
+    --shadow-por-3: #0000001F;
+    --button-shadow-1:#0000001F;
+    --button-shadow-2: #00000014;
+    --button-shadow-3: #0000001A;
 }
 
 * {
@@ -197,6 +204,11 @@ img {
         justify-content: center;
 }
 
+.button-menu:focus,
+.button-menu:hover {
+        box-shadow: 0px 4px 4px var(--shadow-main-button);
+}
+
 .rectangle {
         display: flex;
         width: 270px;
@@ -291,12 +303,19 @@ img {
         border-width: 44px;
 }
 
-.icon:hover,
-.icon:focus {
-        background-color: var(--logo-web-color);
-        fill: var(--primary-bg-color);
-        border-width: 44px;
+.one-social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 44px;
+        height: 44px;
+        fill: var(--main-white);
         border-radius: 50%;
+}
+
+.one-social-icon:hover,
+.one-social-icon:focus {
+        background-color: var(--logo-web-color);
 }
 
 .set-buttons,
@@ -315,9 +334,16 @@ img {
         padding: 0;
         margin: 0 auto;
 }
+
+.card-set-item:hover,
+.card-set-item:focus{
+        box-shadow: 0px 1px 1px var(--shadow-por-3), 0px 4px 4px var(--shadow-por-2), 1px 4px 6px var(--shadow-por-1);
+}
+
 .border-photo {
         border: 1px solid #EEEEEE;
 }
+
 .client-name{
         font-weight: 700;
         letter-spacing: 0.06em;
@@ -491,6 +517,7 @@ img {
 .butons:focus {
         color: var(--primary-bg-color);
         background-color: var(--logo-web-color);
+        box-shadow: 0px 3px 1px var(--button-shadow-3), 0px 1px 2px var(--button-shadow-2), 0px 2px 2px var(--button-shadow-1);
 }
 .buttons,
 .button-menu {

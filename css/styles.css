@@ -12,6 +12,10 @@
     --buttons-color: #F5F4FA;
     --botom-contact-color: #FFFFFF99;
     --icon-color: #AFB1B8;
+    --shadow-img-1: #00000033;
+    --shadow-img-2: #00000024;
+    --shadow-img-3: #0000001F; 
+    --shadow-img: #2F303A66;
 }
 
 * {
@@ -152,9 +156,9 @@ img {
         border-top: 1px solid #ECECEC;
         background-color: var(--footer-bg-color);
         justify-content: center;
-        background-image: linear-gradient(to bottom,
-                        rgba(0, 0, 0, 0) 0%,
-                        rgba(0, 0, 0, 0.7) 100%),
+        background-image: linear-gradient(
+                        var(--shadow-img),
+                        var(--shadow-img)),
                 url("../images/mainphoto.jpg");
                 max-width: 1600px;
         }
@@ -253,6 +257,7 @@ img {
         color: var(--primary-text-color);
         text-align: center;
         margin-bottom: 50px;
+        
 }
 
 .main-images {
@@ -332,6 +337,10 @@ img {
         justify-content: space-around;
         width: 100%;
         gap: 30px;
+}
+
+.team-name-item{
+        box-shadow: 0px 1px 3px var(--shadow-img-3), 0px 1px 1px var(--shadow-img-2), 0px 2px 1px var(--shadow-img-1);
 }
 .team-name{
         text-align: center;

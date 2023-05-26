@@ -11,6 +11,7 @@
     --footer-bg-color: #2F303A;
     --buttons-color: #F5F4FA;
     --botom-contact-color: #FFFFFF99;
+    --icon-color: #AFB1B8;
 }
 
 * {
@@ -125,6 +126,7 @@ img {
         display: flex;
         gap: 50px;
 }
+
 .mail:hover,
 .mail:focus,
 .mail:active {
@@ -138,8 +140,6 @@ img {
 
 .icons-contact {
         margin-right: 10px;
-        width: 16px;
-        height: 12px;
         }
 
 .icons-contact:hover,
@@ -194,6 +194,7 @@ img {
 }
 
 .rectangle {
+        display: flex;
         width: 270px;
         height: 120px;
         background: var(--buttons-color);
@@ -203,10 +204,9 @@ img {
 .lorem-icon {
         display: flex;
         align-items: center;
-        width: 70px;
-        height: 70px;
-        margin-bottom: 20px;
+        padding: 25px 100px;
 }
+
 
 .our-section-list-list {
         display: flex;
@@ -272,6 +272,7 @@ img {
         background-color: var(--primary-bg-color);
 }
 .socialmedia-icons {
+        fill: var(--icon-color);
         background-color: var(--primary-bg-color);
         display: flex;
         justify-content: space-evenly;
@@ -279,14 +280,17 @@ img {
         padding-bottom: 18px;
 }
 .icon {
-        color: #AFB1B8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-width: 44px;
 }
 
 .icon:hover,
 .icon:focus {
-        color: var(--primary-bg-color);
-        fill: var(--primary-bg-color);
         background-color: var(--logo-web-color);
+        fill: var(--primary-bg-color);
+        border-width: 44px;
         border-radius: 50%;
 }
 
@@ -367,7 +371,7 @@ img {
         width: 106px;
         height: 60px;
         margin-top: 20px;
-        color: #afb1b8;
+        fill: var(--icon-color);
         flex-wrap: wrap;
 }
 
@@ -395,20 +399,27 @@ img {
         padding-bottom: 60px;
 }
 
-.join-us-socialmedia {
-        display: block;
-        flex-direction: column;
-}
-.join-us-footer {
-        display: flex;
-        font-weight: 700;
+.social-footer {
+        margin: 72px 0 0 70px;
+        line-height: 1.1428em;
         font-size: 14px;
-        line-height: 1.17;
-        letter-spacing: 0.03em;
-        color: var(--primary-bg-color);
         text-transform: uppercase;
-        margin-left: 171px;
 }
+
+.footer-icons {
+        display: flex;
+        column-gap: 10px;
+        margin: 20px 0 100px 70px;
+}
+
+.footer-list {
+        display: flex;
+        background-color: var(--icon-color);
+        border-radius: 50px;
+        fill: var(--primary-bg-color);
+        padding: 12px;
+}
+
 
 .bottom-margin {
         margin-bottom: 16px;

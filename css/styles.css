@@ -434,28 +434,6 @@ img {
         padding-bottom: 60px;
 }
 
-.social-footer {
-        margin: 72px 0 0 70px;
-        line-height: 1.1428em;
-        font-size: 14px;
-        text-transform: uppercase;
-}
-
-.footer-icons {
-        display: flex;
-        column-gap: 10px;
-        margin: 20px 0 100px 70px;
-}
-
-.footer-list {
-        display: flex;
-        background-color: var(--icon-color);
-        border-radius: 50px;
-        fill: var(--primary-bg-color);
-        padding: 12px;
-}
-
-
 .bottom-margin {
         margin-bottom: 16px;
 }
@@ -522,4 +500,13 @@ img {
 .buttons,
 .button-menu {
         cursor: pointer;
+}
+
+.footer-joinus {
+        display: flex;
+        align-content: space-around;
+}
+.socialmedia-footer {
+        display: flex;
+        align-content: space-around;
 }

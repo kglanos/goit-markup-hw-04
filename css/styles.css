@@ -23,6 +23,7 @@
     --button-shadow-1:#0000001F;
     --button-shadow-2: #00000014;
     --button-shadow-3: #0000001A;
+    --shadow-icon-footer: #FFFFFF1A;
 }
 
 * {
@@ -441,13 +442,6 @@ img {
 }
 
 
-.bottom {
-        padding-top: 60px;
-}
-
-.footer-first {
-        margin-bottom: 16px;
-}
 .studio-name-footer{
         font-family: "Raleway", sans-serif;
         text-decoration: none;
@@ -467,29 +461,6 @@ img {
         color: var(--primary-bg-color);
         display: block;
         margin-right: 20px;
-}
-
-.bottom-contact-link {
-        list-style: none;
-        text-decoration: none;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: var(--botom-contact-color);
-        padding-top: 9px;
-        padding-bottom: 9px;
-        display: block;
-}
-.bottom-contact-portfolio{
-        text-decoration: underline;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 1.7;
-        letter-spacing: 0.03em;
-        color: var(--botom-contact-color);
-        padding-top: 9px;
-        padding-bottom: 9px;
 }
 
 .buttons {
@@ -572,7 +543,7 @@ img {
         width: 44px;
         height: 44px;
         border-radius: 50%;
-        background-color: #FFFFFF1A;
+        background-color: var(--shadow-icon-footer);
         fill:var(--primary-bg-color);
 }
 

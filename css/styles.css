@@ -51,7 +51,8 @@ section {
 }
 a {
         text-decoration: none;
-        margin: 0px;
+        margin: auto;
+        color: transparent;
 }
 
 img {
@@ -113,7 +114,16 @@ img {
 }
 
 .nav-link,
-.site-link,
+.site-link {
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.14;
+                letter-spacing: 0.02em;
+                color: var(--primary-text-color);
+                font-style: normal;
+        }
+
 .mail,
 .tel {
         text-decoration: none;
@@ -121,8 +131,18 @@ img {
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--primary-text-color);
+        color: var(--title-text-color);
+        font-style: normal;
 }
+
+.mail:link{
+        color: var(--title-text-color);
+}
+
+.tel:link {
+        color:var(--title-text-color);
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .nav-link:active {
@@ -136,27 +156,21 @@ img {
         justify-content: space-between;
         display: flex;
         gap: 50px;
+        color: var(--title-text-color);
+        font-style: normal;
 }
 
-.mail:hover,
-.mail:focus,
-.mail:active {
-        color: var(--logo-web-color)
+.contact-button li:hover svg {
+        fill: var(--logo-web-color);
+        cursor: pointer;
 }
-.tel:hover,
-.tel:focus,
-.tel:active {
-        color: var(--logo-web-color)
+.contact-button li:hover a {
+        color: var(--logo-web-color);
+        cursor: pointer;
 }
 
 .icons-contact {
         margin-right: 10px;
-        }
-
-.icons-contact:hover,
-.icons-contact:focus {
-        color: var(--logo-web-color);
-        fill: var(--logo-web-color);
 }
 
 .big-header{
@@ -316,6 +330,7 @@ img {
 .one-social-icon:hover,
 .one-social-icon:focus {
         background-color: var(--logo-web-color);
+        fill: var(--primary-bg-color);
 }
 
 .set-buttons,
@@ -427,20 +442,16 @@ img {
 
 
 .bottom {
-        background-color: var(--footer-bg-color);
-        list-style: none;
-        text-decoration: none;
         padding-top: 60px;
-        padding-bottom: 60px;
 }
 
-.bottom-margin {
+.footer-first {
         margin-bottom: 16px;
 }
 .studio-name-footer{
         font-family: "Raleway", sans-serif;
         text-decoration: none;
-        font-weight: 400;
+        font-weight: 400;       
         font-size: 26px;
         line-height: 1.4;
         letter-spacing: 0.03em;
@@ -454,6 +465,8 @@ img {
         line-height: 1.7;
         letter-spacing: 0.03em;
         color: var(--primary-bg-color);
+        display: block;
+        margin-right: 20px;
 }
 
 .bottom-contact-link {
@@ -466,6 +479,7 @@ img {
         color: var(--botom-contact-color);
         padding-top: 9px;
         padding-bottom: 9px;
+        display: block;
 }
 .bottom-contact-portfolio{
         text-decoration: underline;
@@ -502,11 +516,75 @@ img {
         cursor: pointer;
 }
 
-.footer-joinus {
-        display: flex;
-        align-content: space-around;
+.address-footer a {
+        text-decoration: none;
+        color: var(--botom-contact-color);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        display: block;
 }
-.socialmedia-footer {
+
+.address-footer a:hover {
+        color: var(--logo-web-color);
+}
+.last-section {
+        background: #2f303a;
+        height: 252px;
+}
+.two-blocks {
         display: flex;
-        align-content: space-around;
+}
+.footer-address {
+        padding-top: 60px;
+}
+.link-footer {
+        padding-top: 20px;
+        display: block;
+}
+.social-icon-footer {
+        width: 206px;
+        height: 80px;
+        margin-top: 72px;
+        margin-left: 70px;
+}
+.join-us {
+        color: var(--primary-bg-color);
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0.03em;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 20px;
+}
+.footer-list-icon {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 0;
+        margin-top: 20px;
+}
+
+.icon-group-footer {
+        list-style: none;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: #FFFFFF1A;
+        fill:var(--primary-bg-color);
+}
+
+.mail-footer {
+        padding-bottom: 9px;
+        padding-top: 9px;
+        text-decoration: none;
+        color: var(--primary-text-color);
+}
+
+a:link {
+        text-decoration: none;
+        color: var(--primary-bg-color);
+        font-style: normal;
 }

@@ -114,6 +114,10 @@ img {
         gap: 50px;
 }
 
+.nav-link:link {
+        color: var(--primary-text-color);
+}
+
 .nav-link,
 .site-link {
                 text-decoration: none;
@@ -183,6 +187,7 @@ img {
                         var(--shadow-img)),
                 url("../images/mainphoto.jpg");
                 max-width: 1600px;
+                margin: 0 auto;
         }
 
 .top-button {
